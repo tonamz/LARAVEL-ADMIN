@@ -1,4 +1,4 @@
-@extends ('backend.layouts.app')
+@extends ('layouts.master')
 
 @section ('title', trans('generator::labels.modules.management') . ' | ' . trans('generator::labels.modules.create'))
 
@@ -12,9 +12,9 @@
 @section('content')
     {{ Form::open(['route' => 'admin.modules.store', 'class' => 'form-horizontal', 'role' => 'form', 'method' => 'post', 'id' => 'create-module', 'files' => true]) }}
 
-        <div class="box box-info">
-            <div class="box-header with-border">
-                <h3 class="box-title">{{ trans('generator::labels.modules.create') }}</h3>
+        <div class="card box box-info">
+            <div class="box-header with-border ml-3">
+                <h3 class="box-title ">{{ trans('generator::labels.modules.create') }}</h3>
 
                 <div class="box-tools pull-right">
                     @include('generator::partials.modules-header-buttons')
@@ -25,13 +25,14 @@
             <div class="box-body">
                 <div class="form-group">
                     @include("generator::form")
-                    <div class="edit-form-btn">
+                    <div class="edit-form-btn" align="center">
                     {{ link_to_route('admin.modules.index', trans('buttons.general.cancel'), [], ['class' => 'btn btn-danger btn-md']) }}
                     {{ Form::submit(trans('buttons.general.crud.create'), ['class' => 'btn btn-primary btn-md']) }}
                     <div class="clearfix"></div>
                 </div>
             </div>
         </div><!--box-->
+
     </div>
     {{ Form::close() }}
 @endsection
