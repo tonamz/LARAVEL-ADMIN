@@ -2,6 +2,8 @@
 
 @section ('title', trans('labels.backend.access.users.management'))
 
+<link href="{{ URL::asset('assets/libs/custombox/custombox.min.css')}}" rel="stylesheet">
+
 @section('page-header')
     <h1>
         {{ trans('labels.backend.access.users.management') }}

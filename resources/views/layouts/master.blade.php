@@ -73,7 +73,6 @@
     </div>
     <!-- END wrapper -->
     @include('layouts.footer-script')  
-    
         <!-- JavaScripts -->
         @yield('before-scripts')
         {{ Html::script(mix('js/backend.js')) }}

@@ -22,8 +22,8 @@
 	<!-- /.box-header -->
 	<div class="box-body setting-block">
 		<!-- Nav tabs -->
-		<ul id="myTab" class="nav nav-tabs setting-tab-list" role="tablist">
-			<li role="presentation" class="">
+		<ul id="myTab" class="nav nav-tabs " role="tablist">
+			<li role="presentation"class="nav-item">
 				<a class="active nav-link" href="#tab1" aria-controls="home" role="tab" data-toggle="tab">{{ trans('labels.backend.settings.seo') }}</a>
 			</li>
 			<li role="presentation" class="nav-item">
@@ -219,7 +219,7 @@
 		</div>
 	</div>
 	<!-- /.box-body -->
-	<div class="box-footer">
+	<div class="form-group">
 			<div class="ml-3 mb-3 footer-btn">
 				{{ Form::submit(trans('buttons.general.crud.update'), ['class' => 'btn btn-primary btn-md']) }}
 				<div class="clearfix"></div>

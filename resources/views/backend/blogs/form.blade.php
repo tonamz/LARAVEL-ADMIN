@@ -69,8 +69,7 @@
         {{ Form::label('content', trans('validation.attributes.backend.blogs.content'), ['class' => 'col-lg-12 control-label required']) }}
         
         <div class="col-lg-10 mce-box">
-            {{ Form::textarea('content', null, ['class' => 'form-control', 'placeholder' => trans('validation.attributes.backend.blogs.content')]) }}
-            
+            {{ Form::textarea('content', null, ['class' => 'form-control', 'placeholder' => trans('validation.attributes.backend.blogs.content')]) }}  
         </div><!--col-lg-10-->
     </div><!--form control-->
 
