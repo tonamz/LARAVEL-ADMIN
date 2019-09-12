@@ -15,10 +15,10 @@
         </div><!--col-lg-10-->
     </div><!--form control-->
 
-    <div class="form-group">
-        {{ Form::label('status', trans('validation.attributes.backend.faqs.status'), ['class' => 'col-lg-2 control-label']) }}
+    <div class="form-group row">
+        {{ Form::label('status', trans('validation.attributes.backend.faqs.status'), ['class' => 'col-lg-1 control-label']) }}
 
-        <div class="col-lg-10">
+        <div class="col-lg-11 mt-1">
             <div class="control-group">
                 <label class="control control--checkbox">
                     @if(isset($faq->status))

@@ -26,7 +26,7 @@
             <div class="box-body">
                 <div class="form-group">
                     @include("backend.faqs.form")
-                    <div class="edit-form-btn">
+                    <div class="edit-form-btn mb-2" align="center">
                     {{ link_to_route('admin.faqs.index', trans('buttons.general.cancel'), [], ['class' => 'btn btn-danger btn-md']) }}
                     {{ Form::submit(trans('buttons.general.crud.create'), ['class' => 'btn btn-primary btn-md']) }}
                     <div class="clearfix"></div>
